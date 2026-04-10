@@ -3,6 +3,8 @@ export function checkHeading(str){
 }
 
 export function replaceHeading(str){
+    if (typeof str !== "string") return "";
+
     //return str.replace(/^(\*)(\*)|(\*)\$/g ,'');
     return str.replace(/^\*\s*/, '');
 }
